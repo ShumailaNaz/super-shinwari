@@ -1,0 +1,95 @@
+:root {
+    --main: #eaa023;
+    --dark: #0c1023;
+    --dark-light: #191f3a;
+    --white: #ffffff;
+    --light: #c8c8c8;
+    --shadow: 0 0 15px rgba(0,0,0,0.25);
+    scroll-behavior: smooth;
+    --font: 'Dancing Script', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+     color: #ffffff;
+    line-height: 50px;
+    padding-left: 5px;
+    font-weight: bold;
+  
+}
+.toggler{
+    color: #ffffff;
+    font-size: 40px;
+    background-color: transparent;
+    border: 0;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.image{
+    width: 60px;
+    height: auto;
+}
+.flex{
+    display: flex;
+    justify-content:space-between
+}
+.font{
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+
+.p-relative{
+position: relative;
+}
+
+
+
+.logo{
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+
+
+.main{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    /* opacity: 0.5; */
+    background-image: url(assests/home-bg.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.main>h3{
+    color: #ffffff;
+    font-size: 60px;
+}
+.main>p{
+    color: #C8C8C8;
+    font-size: 16px;
+}
+.btn{
+width: 141px;
+height: 48px;
+border-radius: 30px;
+background: transparent;
+border-color: #EAA023;
+color: #EAA023;
+}
+.about{
+    position: relative;
+}

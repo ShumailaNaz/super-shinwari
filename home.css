@@ -1,0 +1,626 @@
+
+body{
+    background-color: black;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.font {
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.font-light {
+    color: #c8c8c8;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.f-dancing {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+
+.sub-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #E8AA02;
+}
+
+.main-heading {
+    color: #ffff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+
+.icon {
+    width: 60px;
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.heading {
+
+    margin-left: 9px;
+}
+
+.toggler {
+    margin-right: 60px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.header {
+    position: relative;
+    
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.home {
+
+    width: 100%;
+    height: 89.8vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+}
+
+.home::before {
+    content: "";
+    background-image: url(assests/home-bg.jpg);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    background-color: black;
+
+}
+
+.btn {
+    border-radius: 80px;
+    width: 141.98px;
+    height: 48px;
+    color: #E8AA02;
+    padding: 10px 30px;
+    border-color: #E8AA02;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #E8AA02;
+    color: #ffff;
+    outline: 0;
+    transition: background-color 0.5s ease 0s;
+    cursor: pointer;
+    border: transparent;
+}
+
+
+.about,
+.our-menu,
+.testimonials,
+.our-chefs{
+    text-align: center;
+    background: #0c1023;
+    padding: 80px;
+    color: #ffff;
+}
+
+.about-sections {
+    padding: 30px;
+}
+
+.left {
+    margin-right: 50px;
+    text-align: left;
+}
+
+.left>p {
+
+
+    padding-top: 30px;
+}
+
+.btn-menu {
+    width: 200px;
+    height: 48px;
+    margin-top: 30px;
+}
+
+.right {
+    position: relative;
+}
+
+.right>p {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+.right>div {
+    width: 50px;
+    height: 50px;
+    border-color: #E8AA02;
+
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: rotate(45deg);
+    border: 2px solid #E8AA02;
+}
+
+.right>img {
+    border-radius: 15px;
+    width: 516px;
+    height: 318px;
+}
+
+.menus {
+    justify-content: space-around;
+
+}
+
+.menus>ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menus>ul>li>a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+
+}
+
+.menus>ul>li>a:hover {
+    color: #E8AA02;
+}
+
+.menu-items {
+    flex-direction: column;
+    /* height: 300px; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+
+}
+
+.item {
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px dashed #8b8383;
+
+
+
+}
+
+.item>.txt,
+.price {
+    font-weight: bold;
+
+}
+
+.item>.txt:hover {
+    color: #E8AA02;
+}
+
+.item>.price {
+    color: #E8AA02;
+}
+
+.item>.price:hover {
+    color: #ffff;
+}
+
+
+.feedbacks {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.feedback {
+    width: calc((100% / 3) - 30px);
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 2px 1px #191f3a;
+    border-radius: 2px;
+
+}
+
+.feedback>h4 {
+    line-height: 50px;
+    color: #ffff;
+
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    border: 2px solid #191f3a;
+    margin-left: 10px;
+}
+
+.testimonial-img:hover {
+
+    border-color: #E8AA02;
+    transition: border-color 1s ease 0s;
+
+}
+
+.rate {
+    color: #E8AA02;
+}
+
+.chefs-info{
+    padding: 60px;
+}
+.chefs>img{
+    border-radius: 3px;
+}
+
+   
+.chefs{
+    position: relative;
+ 
+}
+.chef{
+    width: 300px;
+    margin: auto;
+     border-radius: 5px;
+     line-height: 40px;
+    background-color: #191f3a;
+    position:absolute ;
+    bottom: -25px;
+    left:20px;
+    
+}
+.chef:hover{
+    bottom: 30px;
+    background-color: #E8AA02;
+    transition: position 1s ease 0.6s;
+
+    }
+  
+ .sites{
+    justify-content: space-around;
+    color: #ffff;
+    padding: 70px;
+    margin-bottom: 30px;
+ }
+ .site{
+    text-align: center;
+ }
+ .copyright{
+    border-top: 1px solid ;
+    text-align: center;
+    width: 80%;
+ margin:auto;
+
+ }
+ 
+ /* .footer-bg{
+    position: relative;
+width: 100%;
+
+ }*/
+ .footer{
+  position: relative;
+
+  width: 100%;
+background: url(assests/footer-bg.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+opacity: 0.5;
+    
+} 
+footer::before{
+ content: "";
+
+position: absolute;
+/*background: url(assests/footer-bg.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+position: absolute; */
+
+}
+@media screen and (min-width: 375px) {
+
+
+    .font{
+       
+        line-height: 30px;
+      
+    }
+    
+    .font-light {
+      
+        margin-bottom: 40px;
+    }
+    
+    .f-dancing {
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 50px;
+    }
+    
+    .sub-heading {
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        color: #E8AA02;
+    }
+    
+    .main-heading {
+       
+        font-size: 35px;
+       
+    }
+    .logo{
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .about{
+
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+  
+    
+    
+
+
+
+    .about,
+.our-menu,
+.testimonials,
+.our-chefs{
+    text-align: center;
+    background: #0c1023;
+    padding: 30px;
+    color: #ffff;
+}
+
+.about-sections {
+    padding: 10px;
+}
+
+.left {
+    margin-right: 2px;
+    text-align: left;
+}
+
+.left>p {
+
+
+    padding-top: 10px;
+}
+
+    
+.sub-heading {
+    font-size: 28px;
+    color: #E8AA02;
+}
+
+.main-heading {
+    color: #ffff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+.btn-menu {
+    
+    margin-bottom: 30px;
+}
+
+.right {
+    position: relative;
+}
+
+.right>p {
+    
+    left: 15%;
+   
+}
+
+/* .right>div {
+    width: 50px;
+    height: 50px;
+    border-color: #E8AA02;
+
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: rotate(45deg);
+    border: 2px solid #E8AA02;
+} */
+
+.right>img {
+    border-radius: 15px;
+    width: 300px;
+    height: 318px;
+}
+
+.menus {
+    justify-content: center
+
+}
+
+.menus>ul {
+    
+    padding: 10px;
+}
+
+.menus>ul>li>a {
+   
+    padding-right: 10px;
+
+}
+
+
+.menu-items {
+    flex-direction: row;
+    /* height: 300px; */
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.item {
+    width: 100%;
+    justify-content: space-around;
+   
+    padding: 15px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.feedbacks {
+    margin-top: 50px;
+    text-align: left;
+      flex-direction: column;
+ 
+}
+
+.feedback {
+    width: calc((100% / 1) - 30px);
+    margin: 10px;
+    padding: 20px;
+ 
+  
+
+}
+
+.feedback>h4 {
+    line-height: 40px;
+   
+
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    border: 2px solid #191f3a;
+    margin-left: 0px;
+}
+
+
+
+
+
+.chefs-info{
+    padding: 5px;
+    flex-direction: column;
+}
+
+
+   
+.chefs{
+    position: relative;
+ 
+}
+.chef{
+    width: 100%;
+    margin: auto;
+     border-radius: 5px;
+     line-height: 30px;
+    background-color: #191f3a;
+    position:absolute ;
+    bottom: -25px;
+    left:20px;
+    
+}
+.chef:hover{
+    bottom: 30px;
+    background-color: #E8AA02;
+    transition: position 1s ease 0.6s;
+
+    }
+  
+ .sites{
+    justify-content: space-around;
+    color: #ffff;
+    padding: 70px;
+    margin-bottom: 30px;
+ }
+ .site{
+    text-align: center;
+ }
+ .copyright{
+    border-top: 1px solid ;
+    text-align: center;
+    width: 80%;
+ margin:auto;
+
+ }
+    
+}
